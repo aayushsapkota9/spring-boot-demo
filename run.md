@@ -1,4 +1,6 @@
 watch mode:
 ./gradlew -t compileJava
-run:
+npm run dev:
 ./gradlew bootRun
+npm install:
+./gradlew build

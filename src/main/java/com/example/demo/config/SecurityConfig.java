@@ -44,6 +44,7 @@ public class SecurityConfig {
                         // Allow anyone to attempt login
                         .requestMatchers("/api/auth/**").permitAll()
                         .requestMatchers("/error").permitAll()
+                        .requestMatchers("/api/teacher/**").permitAll()
 
                         // Keep your previous requirements
                         .requestMatchers(HttpMethod.GET, "/api/users").permitAll()
